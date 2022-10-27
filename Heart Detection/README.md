@@ -6,7 +6,7 @@ Predict a bounding box around the heart in X-ray images
 
 - Create a custom DataSet which will load and return an X-Ray image together with the location of the heart
 
-  <img src="README.assets/image-1.png" alt="image-1" style="zoom:40%;" />
+  <img src="README.assets/image-1.png" alt="image-1"/>
 
 ## Medical Background :paw_prints:
 
@@ -25,9 +25,11 @@ Kaggle —— GPU P100
 
 - **RSNA Pneumonia Detection Challenge**
 
-https://www.kaggle.com/competitions/rsna-pneumonia-detection-challenge
+  https://www.kaggle.com/competitions/rsna-pneumonia-detection-challenge
 
 - 496 X-Ray images
+
+  https://www.kaggle.com/datasets/joymei/rsna-heart-detection
 
 Wang X, Peng Y, Lu L, Lu Z, Bagheri M, Summers RM. ChestX-ray8: Hospital-scale Chest X-ray Database and Benchmarks on Weakly-Supervised Classification and Localization of Common Thorax Diseases. IEEE CVPR 2017, http://openaccess.thecvf.com/content_cvpr_2017/papers/Wang_ChestX-ray8_Hospital-Scale_Chest_CVPR_2017_paper.pdf
 
@@ -74,11 +76,17 @@ Wang X, Peng Y, Lu L, Lu Z, Bagheri M, Summers RM. ChestX-ray8: Hospital-scale C
 ## Training :seedling:
 
 * Network architecture:ResNet18
+
   * Change input channels from 3 to 1
   * Change output dimension from 1000 to 4
+
 * Loss function:Mean Squared Error
+
 * Optimizer:Adam(lr=1e-4)
+
 * Train for 50 epochs
+
+  ![image-3](README.assets/image-3.png)
 
 ## End 🥳
 
